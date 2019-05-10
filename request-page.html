@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!--  This site was created in Webflow. http://www.webflow.com  -->
-<!--  Last Published: Fri May 10 2019 12:22:41 GMT+0000 (UTC)  -->
+<!--  Last Published: Fri May 10 2019 17:54:17 GMT+0000 (UTC)  -->
 <html data-wf-page="5cd54e93d0df71151e0b1774" data-wf-site="5cd3b80dfeabaf7cd770c1a7">
 <head>
   <meta charset="utf-8">
@@ -21,7 +21,7 @@
 <body class="body-3">
   <div data-collapse="medium" data-animation="default" data-duration="400" class="navbar-4 w-nav">
     <div class="container w-container"><a href="index.html" class="brand w-nav-brand"><img src="images/B8KER----DESIGNS.png" width="112" alt="logo" class="image-6"></a>
-      <nav role="navigation" class="nav-menu w-nav-menu"><a href="request-page.html" class="nav-link w-nav-link w--current"><strong>Request</strong></a><a href="index.html" class="nav-link w-nav-link"><strong>Home</strong></a><a href="about.html" class="nav-link w-nav-link"><strong>About</strong></a><a href="portfolio.html" class="nav-link-3 w-nav-link"><strong>Gallery</strong></a></nav>
+      <nav role="navigation" class="nav-menu w-nav-menu"><a href="index.html" class="nav-link w-nav-link"><strong>Home</strong></a><a href="request-page.html" class="nav-link w-nav-link w--current"><strong>Request</strong></a><a href="about.html" class="nav-link w-nav-link"><strong>About</strong></a><a href="portfolio.html" class="nav-link-3 w-nav-link"><strong>Gallery</strong></a></nav>
       <div class="menu-button w-nav-button">
         <div class="icon w-icon-nav-menu"></div>
       </div>
@@ -31,11 +31,11 @@
     <div>
       <div class="w-container">
         <div class="form-block w-form">
-          <form id="email-form" name="email-form" data-name="Email Form" class="form"><label for="name">Name</label><input type="text" class="w-input" maxlength="256" name="name" data-name="Name" id="name"><label for="email">Email Address</label><input type="email" class="w-input" maxlength="256" name="email" data-name="Email" id="email" required=""><label>Brief Description </label><textarea name="Details" maxlength="5000" id="Details" data-name="Details" required="" class="w-input"></textarea><input type="submit" value="Submit" data-wait="Please wait..." class="w-button"></form>
-          <div class="w-form-done">
-            <div>Thank you! Your submission has been received!</div>
+          <form id="email-form" name="email-form" data-name="Email Form" method="get" redirect="/success" data-redirect="/success" class="form"><label for="First-Last-name">Name</label><input type="text" class="w-input" autofocus="true" maxlength="256" name="First-Last-name" data-name="First &amp; Last name" placeholder="First &amp; Last name" id="First-Last-name" required=""><label for="email">Email Address</label><input type="email" class="w-input" maxlength="256" name="email" data-name="Email" placeholder="Email " id="email" required=""><label>Brief Description </label><textarea name="Details" maxlength="5000" id="Details" data-name="Details" required="" placeholder="Describe how I can help you..." class="w-input"></textarea><input type="submit" value="Submit" data-wait="Please wait..." class="w-button"></form>
+          <div class="success-message w-form-done">
+            <div class="text-block-3">Thank you! Your submission has been received!</div>
           </div>
-          <div class="w-form-fail">
+          <div class="error-message w-form-fail">
             <div>Oops! Something went wrong while submitting the form.</div>
           </div>
         </div>

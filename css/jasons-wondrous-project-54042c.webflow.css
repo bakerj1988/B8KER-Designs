@@ -368,7 +368,8 @@
 .form {
   margin-top: 87px;
   padding: 18px;
-  background-color: rgba(0, 0, 0, .82);
+  background-color: #000;
+  opacity: 0.72;
 }
 
 .background-video-2 {
@@ -494,6 +495,24 @@
   font-size: 24px;
 }
 
+.success-message {
+  background-color: hsla(106.28571428571429, 100.00%, 52.23%, 1.00);
+}
+
+.text-block-3 {
+  background-color: #000;
+}
+
+.error-message {
+  background-color: #fa0505;
+}
+
+@media (max-width: 991px) {
+  .button-2 {
+    min-width: 0px;
+  }
+}
+
 @media (max-width: 479px) {
   .body {
     padding-left: 1px;
@@ -513,8 +532,16 @@
     margin-left: 10px;
     padding-left: 0px;
   }
+  .button-2 {
+    max-width: 100vh;
+    min-width: 0px;
+  }
   .nav-menu {
     background-color: rgba(0, 0, 0, .8);
+  }
+  .background-video {
+    overflow: hidden;
+    max-width: 100vh;
   }
   .list-item-8 {
     text-align: justify;
@@ -571,6 +598,9 @@
   .heading-4 {
     color: hsla(106.28571428571429, 100.00%, 52.23%, 1.00);
     text-align: center;
+  }
+  .bold-text {
+    max-width: 100vh;
   }
 }
 
